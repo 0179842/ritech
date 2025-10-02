@@ -1,2 +1,177 @@
-# ritech
-WEB DEVELPMENT PROJECT OAX MX 2025
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RITECH - About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ABOUT-SPECIFIC STYLES */
+        .about-header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .mission-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .mission-icons {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        .team-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .member-card {
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ccc; /* Placeholder para foto */
+            margin: 0 auto 10px;
+        }
+
+        .history-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 200px; /* Ancho de cada punto en el tiempo */
+            margin: 0 10px;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        /* Línea central (Simplificación) */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 2px;
+            background-color: #333;
+            z-index: 0;
+        }
+
+        .year {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timeline-icon {
+            font-size: 40px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html">RITECH</a></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="about-header">
+            <h1>ABOUT US</h1>
+            <div class="mission-icons">💡⚙️</div>
+
+        <section class="mission-section">
+            <h2>OUR MISSION</h2>
+            <p class="mission-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <div class="mission-icons">💡⚙️</div>
+        </section>
+
+        <hr>
+
+        <section class="team-section">
+            <h2>OUR TEAM</h2>
+            <div class="team-members">
+                <div class="member-card">
+                    <div class="member-photo"></div>
+                    <h3>HOREM NAME</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-photo"></div>
+                    <h3>HOREM NAME</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-photo"></div>
+                    <h3>POREN NAME</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="history-section">
+            <h2>COMPANY HISTORY</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">1912</div>
+                    <div class="timeline-dot"></div>
+                    <p>Company dolor incididunt</p>
+                </div>
+                    <div class="timeline-icon">🏛️</div>
+                    <div class="year">1913</div>
+                    <div class="timeline-dot"></div>
+                    <p>Orites adipiscing elit</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">1944</div>
+                    <div class="timeline-icon">🏛️</div>
+                    <p>Vores sit amet</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="timeline-icon">🏢</div>
+                    <p>Modera dolor sit</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 RITECH. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
